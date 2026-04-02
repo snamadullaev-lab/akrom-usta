@@ -144,7 +144,7 @@ function App() {
       notFound: "Product not found",
       address: "Address",
       phone: "Phone",
-      contact: "Contat",
+      contact: "Contact",
     },
   };
 
