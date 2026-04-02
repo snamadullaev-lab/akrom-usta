@@ -106,7 +106,7 @@ function App() {
       pro: "Профессиональный подбор запчастей",
       qay: "Не уверены, какая деталь вам нужна? Наша команда экспертов готова помочь! Мы проконсультируем вас, исходя из совместимости и качества деталей. Экономьте время и избегайте ошибок.",
       ato: "Оптовые поставки для автостоянок",
-      bir: "Biz yirik mijozlar ehtiyojlarini tushunamiz va avtoparklar hamda transport kompaniyalari uchun maxsus shartlar taklif etamiz. Ul​gurji narxlar, moslashuvchan chegirmalar va ustuvor jo‘natish sizning biznesingiz samaradorligini oshiradi.",
+      bir: "Мы понимаем потребности крупных клиентов и предлагаем специальные условия для автопарков и транспортных компаний. Оптовые цены, гибкие скидки и приоритетная отправка повысят эффективность вашего бизнеса.",
       but: "Посмотреть все",
       close: "Закрыть", 
       placeholder: "Введите номер детали...",
@@ -168,24 +168,19 @@ const [showAllLogos, setShowAllLogos] = useState(false);
     {/* HAMMA CONTENT SHU ICHIDA */}
       {/* LANG */}
       <div className="flex justify-end gap-2 p-4">
-        <button
-          onClick={() => setLanguage("uz")}
-          className="bg-white px-3 py-1 rounded"
-        >
-          UZ
-        </button>
-        <button
-          onClick={() => setLanguage("ru")}
-          className="bg-white px-3 py-1 rounded"
-        >
-          RU
-        </button>
-        <button
-          onClick={() => setLanguage("en")}
-          className="bg-white px-3 py-1 rounded"
-        >
-          EN
-        </button>
+        {["uz", "ru", "en"].map((lang) => (
+          <button
+            key={lang}
+            onClick={() => setLanguage(lang)}
+            className={`px-3 py-1 rounded font-semibold transition ${
+              language === lang
+                ? "bg-red-600 text-white"
+                : "bg-white text-gray-800 hover:bg-gray-100"
+            }`}
+          >
+            {lang.toUpperCase()}
+          </button>
+        ))}
       </div>
 
       <div className="py-10 px-4 sm:px-6 md:px-10">
@@ -223,11 +218,11 @@ const [showAllLogos, setShowAllLogos] = useState(false);
                   filteredProducts.map((product) => (
                     <div
                       key={product.id}
-                      className="bg-white rounded-xl shadow p-4 w-full max-w-[420px] mx-auto transition hover:shadow-xl"
+                      className="bg-white rounded-xl shadow p-4 w-full mx-auto transition hover:shadow-xl"
                     >
                       <div className="flex flex-col sm:flex-row gap-4">
                         {/* MAIN IMAGE */}
-                        <div className="w-full sm:w-[240px] h-[250px] sm:h-[320px] bg-gray-100 flex items-center justify-center rounded">
+                        <div className="w-full sm:w-[240px] h-[220px] sm:h-[280px] bg-gray-100 flex items-center justify-center rounded">
                           <img
                             src={product.images?.[0]}
                             alt=""
@@ -239,14 +234,14 @@ const [showAllLogos, setShowAllLogos] = useState(false);
                         </div>
 
                         {/* SMALL IMAGES */}
-                        <div className="flex sm:flex-col gap-2 overflow-x-auto">
+                        <div className="flex sm:flex-col flex-row gap-2 overflow-x-auto sm:overflow-x-visible">
                           {product.images?.slice(1).map((img, i) => (
                             <img
                               key={i}
                               src={img}
                               alt=""
                               onClick={() => setSelectedImage(img)}
-                              className="w-[80px] h-[80px] object-cover rounded cursor-pointer"
+                              className="w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] object-cover rounded cursor-pointer flex-shrink-0"
                             />
                           ))}
                         </div>
@@ -262,7 +257,9 @@ const [showAllLogos, setShowAllLogos] = useState(false);
                     </div>
                   ))
                 ) : (
-                  <p className="text-white w-[10000px] pl-[620px] flex text-lg">{t.notFound}</p>
+                  <div className="col-span-full flex justify-center">
+                    <p className="text-white text-lg">{t.notFound}</p>
+                  </div>
                 )}
               </div>
             )}
@@ -300,7 +297,6 @@ const [showAllLogos, setShowAllLogos] = useState(false);
             <img src={logoa} alt="" className="w-full h-full object-contain" />
           </div>
           <p>{t.mchj}</p>
-          <h3 className="font-semibold">{t.asos}</h3>
           <p>
             <span className="font-bold mr-2">{t.n}</span>
             {t.nas}
@@ -315,7 +311,7 @@ const [showAllLogos, setShowAllLogos] = useState(false);
           <p className="mb-2">{t.max}</p>
           <p className="mb-2">{t.avt}</p>
 
-          <h3 className="font-semibold font-bold text-black mt-4">{t.mij}</h3>
+          <h3 className="font-bold text-black mt-4">{t.mij}</h3>
           <p>{t.bar}</p>
 
           {/* Image at the bottom */}
@@ -357,36 +353,35 @@ const [showAllLogos, setShowAllLogos] = useState(false);
           />
         </div>
       )}
-<div className="pl-[200px] pt-[50px] pr-[200px]">
-<div className="bg-white py-10 rounded-[20px] pl">
-  
-  {/* LOGO GRID */}
-  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
-    {(showAllLogos ? logos : logos.slice(0, 8)).map((logo, index) => (
-      <img
-        key={index}
-        src={logo}
-        alt=""
-        className="w-[160px] h-[120px] object-contain"
-      />
-    ))}
-  </div>
+      <div className="px-4 sm:px-10 md:px-20 lg:px-40 pt-10">
+        <div className="bg-white py-10 px-6 rounded-[20px]">
+          {/* LOGO GRID */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
+            {(showAllLogos ? logos : logos.slice(0, 8)).map((logo, index) => (
+              <img
+                key={index}
+                src={logo}
+                alt=""
+                className="w-[120px] h-[90px] sm:w-[160px] sm:h-[120px] object-contain"
+              />
+            ))}
+          </div>
 
-  {/* BUTTON */}
-  <div className="flex justify-center mt-8">
-   <button
-  onClick={() => setShowAllLogos(!showAllLogos)}
-  className="bg-red-600 text-white px-6 py-3 rounded-xl hover:bg-red-700 transition"
->
-  {showAllLogos ? t.close : t.but}
-</button>
-  </div>
+          {/* BUTTON */}
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={() => setShowAllLogos(!showAllLogos)}
+              className="bg-red-600 text-white px-6 py-3 rounded-xl hover:bg-red-700 transition"
+            >
+              {showAllLogos ? t.close : t.but}
+            </button>
+          </div>
+        </div>
+      </div>
 
-</div>
-   </div>    
       {/* FOOTER */}
-      <div className="mt-[400px]">
-        <footer className="bg-gray-800     text-white py-10">
+      <div className="mt-10">
+        <footer className="bg-gray-800 text-white py-10">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-4">
             <div>
               <div className="flex items-center gap-3">
