@@ -648,6 +648,123 @@ import toryuzmushbir from "../src/assets/toryuzmushbir.jpg";
 
 import toryuzmushiki from "../src/assets/toryuzmushiki.jpg";
 
+import lol from "../src/assets/lol.jpg";
+
+import toryuzmushuch from "../src/assets/toryuzmushuch.jpg";
+
+import toryuzmushtor from "../src/assets/toryuzmushtor.jpg";
+
+import toryuzmushbesh from "../src/assets/toryuzmushbesh.jpg";
+
+import toryuzmusholti from "../src/assets/toryuzmusholti.jpg";
+
+import toryuzmushyeti from "../src/assets/toryuzmushyeti.jpg";
+
+import toryuzmushsakiz from "../src/assets/toryuzmushsakiz.jpg";
+
+import toryuzmushtoqiz from "../src/assets/toryuzmushtoqiz.jpg";
+
+import toryuzyet from "../src/assets/toryuzyet.jpg";
+
+import toryuzyetbir from "../src/assets/toryuzyetbir.jpg";
+
+import toryuzyetiki from "../src/assets/toryuzyetiki.jpg";
+
+import toryuzyetuch from "../src/assets/toryuzyetuch.jpg";
+
+import toryuzyettor from "../src/assets/toryuzyettor.jpg";
+
+import toryuzyetbesh from "../src/assets/toryuzyetbesh.jpg";
+
+import toryuzyetolti from "../src/assets/toryuzyetolti.jpg";
+
+import toryuzyetyeti from "../src/assets/toryuzyetyeti.jpg";
+
+import toryuzyetsakiz from "../src/assets/toryuzyetsakiz.jpg";
+
+import toryuzyettoqiz from "../src/assets/toryuzyettoqiz.jpg";
+
+
+import toryuzsakbir from "../src/assets/toryuzsakbir.jpg";
+
+import toryuzsakiki from "../src/assets/toryuzsakiki.jpg";
+
+import toryuzsakuch from "../src/assets/toryuzsakuch.jpg"
+
+import toryuzsaktor from "../src/assets/toryuzsaktor.jpg"
+
+import toryuzsakbesh from "../src/assets/toryuzsakbesh.jpg"
+
+import toryuzsakolti from "../src/assets/toryuzsakolti.jpg"
+
+import toryuzsakyeti from "../src/assets/toryuzsakyeti.jpg"
+
+import toryuzsaksakiz from "../src/assets/toryuzsaksakiz.jpg"
+
+import toryuzsaktoqiz from "../src/assets/toryuzsaktoqiz.jpg"
+
+import toryuztoq from "../src/assets/toryuztoq.jpg"
+
+import toryuztoqbir from "../src/assets/toryuztoqbir.jpg"
+
+import toryuztoqiki from "../src/assets/toryuztoqiki.jpg"
+
+import toryuztoquch from "../src/assets/toryuztoquch.jpg"
+
+import toryuztoqtor from "../src/assets/toryuztoqtor.jpg"
+
+import toryuztoqbesh from "../src/assets/toryuztoqbesh.jpg"
+
+import toryuztoqolti from "../src/assets/toryuztoqolti.jpg"
+
+import toryuztoqyeti from "../src/assets/toryuztoqyeti.jpg"
+
+import toryuztoqsakiz from "../src/assets/toryuztoqsakiz.jpg"
+
+import toryuztoqtoqiz from "../src/assets/toryuztoqtoqiz.jpg"
+
+import beshyuz from "../src/assets/beshyuz.jpg"
+
+import beshyuzbir from "../src/assets/beshyuzbir.jpg"
+
+import beshyuziki from "../src/assets/beshyuziki.jpg"
+
+import beshyuzuch from "../src/assets/beshyuzuch.jpg"
+
+import beshyuztor from "../src/assets/beshyuztor.jpg"
+
+import beshyuzbesh from "../src/assets/beshyuzbesh.jpg"
+
+import beshyuzolti from "../src/assets/beshyuzolti.jpg"
+
+import beshyuzyeti from "../src/assets/beshyuzyeti.jpg"
+
+import beshyuzsakiz from "../src/assets/beshyuzsakiz.jpg"
+
+import beshyuztoqiz from "../src/assets/beshyuztoqiz.jpg"
+
+import beshyuzon from "../src/assets/beshyuzon.jpg"
+
+import beshyuzonbir from "../src/assets/beshyuzonbir.jpg"
+
+import beshyuzoniki from "../src/assets/beshyuzoniki.jpg"
+
+import beshyuzontor from "../src/assets/beshyuzontor.jpg"
+
+import beshyuzonbesh from "../src/assets/beshyuzonbesh.jpg"
+
+import beshyuzonolti from "../src/assets/beshyuzonolti.jpg"
+
+import beshyuzonyeti from "../src/assets/beshyuzonyeti.jpg"
+
+import beshyuzonsakiz from "../src/assets/beshyuzonsakiz.jpg"
+
+import beshyuzontoqiz from "../src/assets/beshyuzontoqiz.jpg"
+
+
+
+
+
 
   const products = [
     {
@@ -1908,88 +2025,480 @@ import toryuzmushiki from "../src/assets/toryuzmushiki.jpg";
     },
     {
       id: 181,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
-      description: "Хиндистонда ишлаб чикарилган",
+      code: "51.04101-0538",
+      title: "КЛАПАН ВЫПУСКНОЙ MAN",  
+      description: "",
       images: [ toryuzelibir ],
     },
     {
       id: 182,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
-      description: "Хиндистонда ишлаб чикарилган",
+      code: "51.04101-0537",
+      title: "КЛАПАН ВПУСКНОЙ MAN",  
+      description: "",
       images: [ toryuzeliiki ],
     },
     {
       id: 183,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
+      code: "",
+      title: "Зубчатое кольцо маховика (венец маховика) MAN CLA",  
       description: "Хиндистонда ишлаб чикарилган",
       images: [ toryuzeliuch ],
     },
     {
       id: 184,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
-      description: "Хиндистонда ишлаб чикарилган",
+      code: "81.30715-6132",
+      title: "ГЛАВНЫЙ ЦИЛИНДР СЦЕПЛЕНИЯ",  
+      description: "Изготовитель KRD - Турция",
       images: [ toryuzelitor ],
     },
     {
       id: 185,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
-      description: "Хиндистонда ишлаб чикарилган",
+      code: "81.30715-6132",
+      title: "ГЛАВНЫЙ ЦИЛИНДР СЦЕПЛЕНИЯ",  
+      description: "Изготовитель FTE - Германия",
       images: [ toryuzelibesh ],
     },
     {
       id: 186,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
-      description: "Хиндистонда ишлаб чикарилган",
+      code: "64.09100.7003",
+      title: "Турбокомпрессор (турбина) для грузовой машины MAN CLA ",  
+      description: "Производство - Китай",
       images: [ toryuzeliolti ],
     },
     {
       id: 187,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
+      code: "64.11301-0002",
+      title: "Ведущее колесо для впрыскивающего насоса MAN",  
       description: "Хиндистонда ишлаб чикарилган",
       images: [ toryuzeliyeti ],
     },
     {
       id: 188,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
-      description: "Хиндистонда ишлаб чикарилган",
+      code: "395778",
+      title: "Полный набор прокладок и сальников на двигатель MAN",  
+      description: "Туркияда ишлаб чикарилган",
       images: [ toryuzelisakiz ],
     },
     {
       id: 189,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
-      description: "Хиндистонда ишлаб чикарилган",
+      code: "51.05405.5024",
+      title: "Клапан давления масла MAN",  
+      description: "",
       images: [ toryuzelitoqiz ],
     },
     {
       id: 190,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
-      description: "Хиндистонда ишлаб чикарилган",
+      code: "51.06630-0067",
+      title: "Управляемая муфта вентилятора MAN",  
+      description: "",
       images: [ toryuzmush ],
     },
     {
       id: 191,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
+      code: "51.06500.7064",
+      title: "Водяной насос MAN",  
       description: "Хиндистонда ишлаб чикарилган",
       images: [ toryuzmushbir ],
     },
     {
       id: 192,
-      code: "64.91301-0302",
-      title: "Штифт цилиндра кулисы КПП",  
+      code: "64.26201-7001",
+      title: "Стартер мотора для MAN CLA",  
       description: "Хиндистонда ишлаб чикарилган",
       images: [ toryuzmushiki ],
     },
+    {
+      id: 193,
+      code: "81.30560.6022",
+      title: "Вилка сцепления в сборе MAN",  
+      description: "",
+      images: [ lol ],
+    },
+    {
+      id: 194,
+      code: "81.32425-0193",
+      title: "Конус синхронизатора",  
+      description: "",
+      images: [ toryuzmushuch ],
+    },
+    {
+      id: 195,
+      code: "81.32220-0086",
+      title: "Втулка КПП",  
+      description: "",
+      images: [ toryuzmushtor ],
+    },
+    {
+      id: 196,
+      code: "81.93420-0388",
+      title: "Подшипник игольчатый 75х83х40",  
+      description: "",
+      images: [ toryuzmushbesh ],
+    },
+    {
+      id: 197,
+      code: "81.93402-0157",
+      title: "Подшипник КПП 75х83х23",  
+      description: "",
+      images: [ toryuzmusholti ],
+    },
+    {
+      id: 198,
+      code: "81.93402-0170",
+      title: "Сепаратор роликоподшипника",  
+      description: "",
+      images: [ toryuzmushyeti ],
+    },
+    {
+      id: 199,
+      code: "81.93501-0080",
+      title: "Подшипник конический 42х40",  
+      description: "",
+      images: [ toryuzmushsakiz ],
+    },
+    {
+      id: 200,
+      code: "81.32562-0555",
+      title: "Трубка подачки масла",  
+      description: "",
+      images: [ toryuzmushtoqiz ],
+    },
+    {
+      id: 201,
+      code: "70809149",
+      title: "Термостат, охлаждающая жидкость BEHR TX",  
+      description: "Германияда ишлаб чиқарилган",
+      images: [ toryuzyet ],
+    },
+    {
+      id: 202,
+      code: "64.10100-7004",
+      title: "ИНЖЕКТОР (Форсунка) MAN CLA",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ toryuzyetbir ],
+    },
+    {
+      id: 203,
+      code: "81.39151-6068",
+      title: "КАРДАННЫЙ ВАЛ В СБОРЕ ДЛЯ МАН",  
+      description: "Германияда ишлаб чикарилган",
+      images: [ toryuzyetiki ],
+    },
+    {
+      id: 204,
+      code: "64.01401-5003",
+      title: "КОЖУХ МАХОВИКА MAN CLA",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ toryuzyetuch ],
+    },
+    {
+      id: 205,
+      code: "81.50410-6868",
+      title: "Энергоаккумулятор ведущего моста",  
+      description: "Германияда ишлаб чикарилган",
+      images: [ toryuzyettor ],
+    },
+    {
+      id: 206,
+      code: "81.50301-0314",
+      title: "Вал тормозной правый передний",  
+      description: "Германияда ишлаб чикарилган",
+      images: [ toryuzyetbesh ],
+    },
+    {
+      id: 207,
+      code: "81.50301-0112",
+      title: "Вал тормозной задний правый",  
+      description: "Германияда ишлаб чикарилган",
+      images: [ toryuzyetolti ],
+    },
+    {
+      id: 208,
+      code: "64.43402-0007",
+      title: "ЛИСТОВАЯ РЕССОРА В СБОРЕ. (ПЕРЕДНИЙ)",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ toryuzyetyeti ],
+    },
+    {
+      id: 209,
+      code: "64.30305-0006",
+      title: "Диск сцепления нажимной",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ toryuzyetsakiz ],
+    },
+    {
+      id: 210,
+      code: "935641",
+      title: "Прокладка головки цилиндров",  
+      description: "Туркияда ишлаб чикарилган",
+      images: [ toryuzyettoqiz ],
+    },
+    {
+      id: 211,
+      code: "51.03901-0378",
+      title: "Прокладка головки цилиндров MAN CLA",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ toryuzsakbir ],
+    },
+    {
+      id: 212,
+      code: "64.06500-4002",
+      title: "Водяной насос в сборе",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ toryuzsakiki ],
+    },
+    {
+      id: 213,
+      code: "64.10100-7004",
+      title: "Топливный инжектор в сборе",  
+      description: "Германияда ишлаб чикарилган",
+      images: [ toryuzsakuch ],
+    },
+    {
+      id: 214,
+      code: "51.05901.0160",
+      title: "Прокладка масляного радиатора",  
+      description: "Германияда ишлаб чикарилган",
+      images: [ toryuzsaktor ],
+    },
+    {
+      id: 215,
+      code: "81.39374.6001",
+      title: "Крестовина карданного вала",  
+      description: "",
+      images: [ toryuzsakbesh ],
+    },
+    {
+      id: 216,
+      code: "51.03203-0409",
+      title: "Седло клапана впуск",  
+      description: "Turkiyada ishlab chiqarilgan",
+      images: [ toryuzsakolti ],
+    },
+    {
+      id: 217,
+      code: "51.12150-0001",
+      title: "Топливный насос ручной подкачки",  
+      description: "",
+      images: [ toryuzsakyeti ],
+    },
+    {
+      id: 218,
+      code: "81.43704-0078",
+      title: "Втулка (сайлентблок) переднего стабилизатора",  
+      description: "Turkiyada ishlab chiqarilgan",
+      images: [ toryuzsaksakiz ],
+    },
+    {
+      id: 219,
+      code: "64.01903-0002",
+      title: "Прокладка передней крышки двигателя",  
+      description: "Германияда ишлаб чикарилган",
+      images: [ toryuzsaktoqiz ],
+    },
+    {
+      id: 220,
+      code: "51.01804-6002",
+      title: "Фильтр сапуна к двигателям",  
+      description: "",
+      images: [ toryuztoq ],
+    },
+    {
+      id: 221,
+      code: "51.05504-0122",
+      title: "Масляный фильтр к двигателям MAN",  
+      description: "Turkiyada ishlab chiqarilgan",
+      images: [ toryuztoqbir ],
+    },
+    {
+      id: 222,
+      code: "81.90685-0053",
+      title: "Гайка вала среднего моста MAN",  
+      description: "",
+      images: [ toryuztoqiki ],
+    },
+    {
+      id: 223,
+      code: "03315267",
+      title: "ИНДИКАТОР УРОВНЯ автокранов GROVE",  
+      description: "",
+      images: [ toryuztoquch ],
+    },
+    {
+      id: 224,
+      code: "81.50610.6253",
+      title: "ТРЕЩОТКА ТОРМОЗНАЯ (задняя левая)",  
+      description: "Туркияда ишлаб чикарилган",
+      images: [ toryuztoqtor ],
+    },
+    {
+      id: 225,
+      code: "64.01102-6517",
+      title: "Блок для дизельного мотора MAN CLA, с гильзой",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ toryuztoqbesh ],
+    },
+    {
+      id: 226,
+      code: "51.96501-0605",
+      title: "Круглое уплотнение 4,5X2-FPM",  
+      description: "",
+      images: [ toryuztoqolti ],
+    },
+    {
+      id: 227,
+      code: "0460426486",
+      title: "Топливный насос (ТНВД) MAN CLA",  
+      description: "",
+      images: [ toryuztoqyeti ],
+    },
+    {
+      id: 228,
+      code: "51.05901-0160",
+      title: "Прокладка масляного радиатора",  
+      description: "",
+      images: [ toryuztoqsakiz ],
+    },
+    {
+      id: 229,
+      code: "51.03203-0219",
+      title: "Кольцо седла клапана",  
+      description: "",
+      images: [ toryuztoqtoqiz ],
+    },
+    {
+      id: 230,
+      code: "81.43704.0078",
+      title: "Втулка (сайлентблок) переднего стабилизатора",  
+      description: "",
+      images: [ beshyuz ],
+    },
+    {
+      id: 231,
+      code: "51.12150-0000",
+      title: "Насос топливный ручной подкачки",  
+      description: "",
+      images: [ beshyuzbir ],
+    },
+    {
+      id: 232,
+      code: "64.04506-0002",
+      title: "Ось промежуточной шестерни",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ beshyuziki ],
+    },
+    {
+      id: 233,
+      code: "64.01904-0001",
+      title: "Прокладка корпуса маховика",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ beshyuzuch ],
+    },
+    {
+      id: 234,
+      code: "64.01903-0002",
+      title: "Прокладка, картер рулевого механизма.",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ beshyuztor ],
+    },
+    {
+      id: 235,
+      code: "11 зуб, 24V",
+      title: "Стартер мотора для дизельного двигателя",  
+      description: "Производства - Китай",
+      images: [ beshyuzbesh ],
+    },
+    {
+      id: 236,
+      code: "51.02101.6090",
+      title: "Коленвал МАН СЛА юк машиналари учун",  
+      description: "Германияда ишлаб чикарилган",
+      images: [ beshyuzolti ],
+    },
+    {
+      id: 237,
+      code: "51.02410-0646",
+      title: "Шатунный вкладыш круговой",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ beshyuzyeti ],
+    },
+    {
+      id: 238,
+      code: "053",
+      title: "Масляный сальник мотора MAN CLA",  
+      description: "Туркияда ишлаб чикарилган",
+      images: [ beshyuzsakiz ],
+    },
+    {
+      id: 239,
+      code: "15W-40",
+      title: "Дизельное маторное масло",  
+      description: "",
+      images: [ beshyuztoqiz ],
+    },
+    {
+      id: 240,
+      code: "венец маховика",
+      title: "Зубчатое кольцо маховика",  
+      description: "Хиндистонда ишлаб чиқарилган",
+      images: [ beshyuzon ],
+    },
+    {
+      id: 241,
+      code: "02 0321 083000",
+      title: "КОМПЛЕКТ ПОРШНЕВЫХ КОЛЕЦ",  
+      description: "Германияда ишлаб чиқарилган",
+      images: [ beshyuzonbir ],
+    },
+    {
+      id: 242,
+      code: "383983 ",
+      title: "Масляный сальник мотора MAN CLA",  
+      description: "Туркияда ишлаб чикарилган",
+      images: [ beshyuzoniki ],
+    },
+    {
+      id: 243,
+      code: "64.01401-5003",
+      title: "Интеркулер (охладитель) в сборе с иннерфинами",  
+      description: "Хиндистонда ишлаб чикарилган",
+      images: [ beshyuzontor ],
+    },
+    {
+      id: 244,
+      code: "Комбайны зерноуборочные",
+      title: "Битеры для зерноуборочных комбайнов Нью Холланд",  
+      description: "",
+      images: [ beshyuzonbesh ],
+    },
+    {
+      id: 245,
+      code: "Автозапчасти и комплектующие",
+      title: "Оригинальные запчасти к грузовикам",  
+      description: "",
+      images: [ beshyuzonolti ],
+    },
+    {
+      id: 246,
+      code: "Автозапчасти и комплектующие",
+      title: "Турбокомпрессор MAN CLA",  
+      description: "",
+      images: [ beshyuzonyeti ],
+    },
+    {
+      id: 247,
+      code: "0 281 002 655",
+      title: "Датчик давления воздуха",  
+      description: "Германияда ишлаб чикарилган",
+      images: [ beshyuzonsakiz ],
+    },
+    {
+      id: 248,
+      code: "Сельхозшина",
+      title: "400/60-15,5 (13,00x15,5)",  
+      description: "",
+      images: [ beshyuzontoqiz ],
+    }
   ];
 
 
