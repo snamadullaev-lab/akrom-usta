@@ -335,10 +335,10 @@ function App() {
     
     {/* Logo */}
     <img
-      src={logoa}
-      alt="logo"
-      className="w-[200px] sm:w-[200px] mb-4 object-contain brightness-0 invert"
-    />
+  src={logoa}
+  alt="logo"
+  className="absolute top-[20px] left-[60px] w-[200px] sm:w-[260px] object-contain brightness-0 invert z-30"
+/>
 
     {/* Tagline */}
     <h2
@@ -353,7 +353,7 @@ function App() {
     <h1
       className="text-white font-bold uppercase mb-4"
       style={{
-        fontFamily: "'Oswald', Impact, sans-serif",
+        fontFamily: "'Oswald',  sans-serif",
         fontSize: "clamp(40px, 7vw, 72px)",
         lineHeight: 1.0,
         letterSpacing: "-0.01em",
