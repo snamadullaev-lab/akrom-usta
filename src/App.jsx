@@ -330,40 +330,50 @@ function App() {
 
         {/* HERO SECTION */}
         {!(openAbout || openServices) && (  
-<div className="flex flex-col pt-[70px] items-start pb-6 pl-6 sm:pl-10 md:pl-16 lg:pl-24">            <div className="max-w-xl text-left">
-              {/* Tagline */}
-              <h2 className="text-white text-xs sm:text-sm font-semibold uppercase tracking-widest mb-3 flex items-center gap-2"
-                style={{ fontFamily: "'Open Sans', sans-serif", opacity: 0.85 }}
-              >
-                <span className="inline-block w-[3px] h-[14px] bg-red-600 rounded flex-shrink-0"></span>
-                {t.ishon}
-              </h2>
+<div className="flex flex-col pt-[70px] items-start pb-6 pl-6 sm:pl-10 md:pl-16 lg:pl-24">
+  <div className="max-w-xl text-left">
+    
+    {/* Logo */}
+    <img
+      src={logoa}
+      alt="logo"
+      className="w-[200px] sm:w-[200px] mb-4 object-contain brightness-0 invert"
+    />
 
-              {/* Main Title */}
-              <h1
-                className="text-white font-bold uppercase mb-4"
-                style={{
-                  fontFamily: "'Oswald', Impact, sans-serif",
-                  fontSize: "clamp(40px, 7vw, 72px)",
-                  lineHeight: 1.0,
-                  letterSpacing: "-0.01em",
-                  whiteSpace: "pre-line",
-                }}
-              >
-                {t.title}
-              </h1>
+    {/* Tagline */}
+    <h2
+      className="text-white text-xs sm:text-sm font-semibold uppercase tracking-widest mb-3 flex items-center gap-2"
+      style={{ fontFamily: "'Open Sans', sans-serif", opacity: 0.85 }}
+    >
+      <span className="inline-block w-[3px] h-[14px] bg-red-600 rounded flex-shrink-0"></span>
+      {t.ishon}
+    </h2>
 
-              {/* Description */}
-              <p
-                className="text-sm sm:text-base leading-relaxed"
-                style={{ color: "rgba(255,255,255,0.82)", maxWidth: 420 }}
-              >
-                {t.d} <br />
-                {t.k} <br />
-                {t.l}
-              </p>
-            </div>
-          </div>
+    {/* Main Title */}
+    <h1
+      className="text-white font-bold uppercase mb-4"
+      style={{
+        fontFamily: "'Oswald', Impact, sans-serif",
+        fontSize: "clamp(40px, 7vw, 72px)",
+        lineHeight: 1.0,
+        letterSpacing: "-0.01em",
+        whiteSpace: "pre-line",
+      }}
+    >
+      {t.title}
+    </h1>
+
+    {/* Description */}
+    <p
+      className="text-sm sm:text-base leading-relaxed"
+      style={{ color: "rgba(255,255,255,0.82)", maxWidth: 420 }}
+    >
+      {t.d} <br />
+      {t.k} <br />
+      {t.l}
+    </p>
+  </div>
+</div>
         )}
 
         {/* SEARCH BUTTON */}
