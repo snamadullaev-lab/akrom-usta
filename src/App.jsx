@@ -452,7 +452,7 @@ function App() {
       {/* STATS ROW */}
      {/* STATS ROW */}
 {!(openAbout || openServices) && (
-  <div className="flex flex-wrap">
+  <div className="flex flex-wrap pl-[60px]">
         <div className="flex items-center gap-4 px-6 py-4 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
           <img src={taj} alt="" className="w-12 h-12 object-contain" />
           <div>
