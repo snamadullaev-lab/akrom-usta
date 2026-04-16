@@ -7,7 +7,7 @@ import bg from "./assets/bg.jpg";
 
 import products from "./products";
 
-import logoa from "./assets/logoa.png";
+import logoa from "../public/logoa.png";
 
 import logo2 from "./assets/logo2.png";
 import logo3 from "./assets/logo3.png";
