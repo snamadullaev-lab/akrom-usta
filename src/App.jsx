@@ -41,8 +41,6 @@ import humo from "./assets/humo.png";
 import uz from "./assets/uz.png";
 import visa from "./assets/visa.png";
 
-
-
 function App() {
   const [openCatalog, setOpenCatalog] = useState(false);
   const [searchValue, setSearchValue] = useState("");
@@ -55,11 +53,28 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const logos = [
-    logo2, logo3, logo4, logo5, logo6,
-    logo7, logo8, logo9, logo10, logo11,
-    logo12, logo13, logo14, logo15, logo16,
-    logo17, logo18, logo19, logo20, logo21,
-    logo22, logo23,
+    logo2,
+    logo3,
+    logo4,
+    logo5,
+    logo6,
+    logo7,
+    logo8,
+    logo9,
+    logo10,
+    logo11,
+    logo12,
+    logo13,
+    logo14,
+    logo15,
+    logo16,
+    logo17,
+    logo18,
+    logo19,
+    logo20,
+    logo21,
+    logo22,
+    logo23,
   ];
 
   const translations = {
@@ -189,7 +204,7 @@ function App() {
   const t = translations[language];
 
   const filteredProducts = products.filter((product) =>
-    product.code.toLowerCase().includes(searchValue.toLowerCase())
+    product.code.toLowerCase().includes(searchValue.toLowerCase()),
   );
 
   const goHome = () => {
@@ -206,109 +221,108 @@ function App() {
       style={{ backgroundImage: `url(${bg})` }}
     >
       {/* NAVBAR */}
-     <div className="relative w-full">
-  <div className="absolute inset-0 bg-black/40 z-10"></div>
+      <div className="relative w-full">
+        <div className="absolute inset-0 bg-black/40 z-10"></div>
 
-  <div className="relative z-20 flex items-center justify-between px-4 sm:px-6 py-4">
-    
-    {/* LOGOS */}
-    <div className="flex items-center gap-2  max-w-[70%]">
-  <img src={logo4} className="h-8 object-contain flex-shrink-0" />
-  <img src={logo5} className="h-8 object-contain flex-shrink-0" />
-  <img src={logo6} className="h-8 object-contain flex-shrink-0" />
-  <img src={logo8} className="h-8 object-contain flex-shrink-0" />
-  <img src={logo9} className="h-8 object-contain flex-shrink-0" />
-</div>
+        <div className="relative z-20 flex items-center justify-between px-4 sm:px-6 py-4">
+          {/* LOGOS */}
+          <div className="flex items-center gap-2  max-w-[70%]">
+            <img src={logo4} className="h-8 object-contain flex-shrink-0" />
+            <img src={logo5} className="h-8 object-contain flex-shrink-0" />
+            <img src={logo6} className="h-8 object-contain flex-shrink-0" />
+            <img src={logo8} className="h-8 object-contain flex-shrink-0" />
+            <img src={logo9} className="h-8 object-contain flex-shrink-0" />
+          </div>
 
-    {/* DESKTOP MENU */}
-    <div className="hidden md:flex items-center gap-6 text-white font-medium">
-      <button onClick={goHome} className="hover:text-red-400 transition">
-        {t.bosh}
-      </button>
+          {/* DESKTOP MENU */}
+          <div className="hidden md:flex items-center gap-6 text-white font-medium">
+            <button onClick={goHome} className="hover:text-red-400 transition">
+              {t.bosh}
+            </button>
 
-      <button
-        onClick={() => {
-          setOpenAbout(!openAbout);
-          setOpenServices(false);
-        }}
-        className="hover:text-red-400 transition"
-      >
-        {t.kor}
-      </button>
+            <button
+              onClick={() => {
+                setOpenAbout(!openAbout);
+                setOpenServices(false);
+              }}
+              className="hover:text-red-400 transition"
+            >
+              {t.kor}
+            </button>
 
-      <button
-        onClick={() => {
-          setOpenServices(!openServices);
-          setOpenAbout(false);
-        }}
-        className="hover:text-red-400 transition"
-      >
-        {t.bi}
-      </button>
+            <button
+              onClick={() => {
+                setOpenServices(!openServices);
+                setOpenAbout(false);
+              }}
+              className="hover:text-red-400 transition"
+            >
+              {t.bi}
+            </button>
 
-      <button
-        onClick={() => {
-          setShowFooter(true);
-          setOpenAbout(false);
-          setOpenServices(false);
-          setOpenCatalog(false);
-        }}
-        className="hover:text-red-400 transition"
-      >
-        {t.contact}
-      </button>
-    </div>
+            <button
+              onClick={() => {
+                setShowFooter(true);
+                setOpenAbout(false);
+                setOpenServices(false);
+                setOpenCatalog(false);
+              }}
+              className="hover:text-red-400 transition"
+            >
+              {t.contact}
+            </button>
+          </div>
 
-    {/* MOBILE BURGER */}
-    <div className="md:hidden">
-      <button
-        onClick={() => setMenuOpen(!menuOpen)}
-        className="text-white text-2xl"
-      >
-        ☰
-      </button>
-    </div>
-  </div>
+          {/* MOBILE BURGER */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-white text-2xl"
+            >
+              ☰
+            </button>
+          </div>
+        </div>
 
-  {/* MOBILE MENU */}
-  {menuOpen && (
-    <div className="md:hidden  text-white flex flex-col gap-4 px-6 py-6 z-30 relative">
-      <button onClick={goHome}>{t.bosh}</button>
+        {/* MOBILE MENU */}
+        {menuOpen && (
+          <div className="md:hidden  text-white flex flex-col gap-4 px-6 py-6 z-30 relative">
+            <button onClick={goHome}>{t.bosh}</button>
 
-      <button
-        onClick={() => {
-          setOpenAbout(!openAbout);
-          setOpenServices(false);
-          setMenuOpen(false);
-        }}
-      >
-        {t.kor}
-      </button>
+            <button
+              onClick={() => {
+                setOpenAbout(!openAbout);
+                setOpenServices(false);
+                setMenuOpen(false);
+              }}
+            >
+              {t.kor}
+            </button>
 
-      <button
-        onClick={() => {
-          setOpenServices(!openServices);
-          setOpenAbout(false);
-          setMenuOpen(false);
-        }}
-      >
-        {t.bi}
-      </button>
+            <button
+              onClick={() => {
+                setOpenServices(!openServices);
+                setOpenAbout(false);
+                setMenuOpen(false);
+              }}
+            >
+              {t.bi}
+            </button>
 
-      <button
-        onClick={() => {
-          setShowFooter(true);
-          setOpenAbout(false);
-          setOpenServices(false);
-          setOpenCatalog(false);
-          setMenuOpen(false);
-        }}
-      >
-        {t.contact}
-      </button>
-    </div>
-  )}
-</div>
+            <button
+              onClick={() => {
+                setShowFooter(true);
+                setOpenAbout(false);
+                setOpenServices(false);
+                setOpenCatalog(false);
+                setMenuOpen(false);
+              }}
+            >
+              {t.contact}
+            </button>
+          </div>
+        )}
+      </div>
 
       {/* LANGUAGE BUTTONS */}
       <div className="relative z-10 ">
@@ -329,70 +343,68 @@ function App() {
         </div>
 
         {/* HERO SECTION */}
-        {!(openAbout || openServices) && (  
-<div className="flex flex-col pt-[70px] items-start pb-6 pl-6 sm:pl-10 md:pl-16 lg:pl-24">
-  <div className="max-w-xl text-left">
-    
-    {/* Logo */}
-    <img
-  src={logoa}
-  alt="logo"
-  className="absolute top-[20px] left-[60px] w-[200px] sm:w-[260px] object-contain brightness-0 invert z-30"
-/>
+        {!(openAbout || openServices) && (
+          <div className="flex flex-col pt-[70px] items-start pb-6 pl-6 sm:pl-10 md:pl-16 lg:pl-24">
+            <div className="max-w-xl text-left">
+              {/* Logo */}
+              <img
+                src={logoa}
+                alt="logo"
+                className="absolute top-[20px] left-[60px] w-[200px] sm:w-[260px] object-contain brightness-0 invert z-30"
+              />
 
-    {/* Tagline */}
-    <h2
-      className="text-white text-xs sm:text-sm font-semibold uppercase tracking-widest mb-3 flex items-center gap-2"
-      style={{ fontFamily: "'Open Sans', sans-serif", opacity: 0.85 }}
-    >
-      <span className="inline-block w-[3px] h-[14px] bg-red-600 rounded flex-shrink-0"></span>
-      {t.ishon}
-    </h2>
+              {/* Tagline */}
+              <h2
+                className="text-white text-xs sm:text-sm font-semibold uppercase tracking-widest mb-3 flex items-center gap-2"
+                style={{ fontFamily: "'Open Sans', sans-serif", opacity: 0.85 }}
+              >
+                <span className="inline-block w-[3px] h-[14px] bg-red-600 rounded flex-shrink-0"></span>
+                {t.ishon}
+              </h2>
 
-    {/* Main Title */}
-    <h1
-      className="text-white font-bold uppercase mb-4"
-      style={{
-        fontFamily: "'Oswald',  sans-serif",
-        fontSize: "clamp(40px, 7vw, 72px)",
-        lineHeight: 1.0,
-        letterSpacing: "-0.01em",
-        whiteSpace: "pre-line",
-      }}
-    >
-      {t.title}
-    </h1>
+              {/* Main Title */}
+              <h1
+                className="text-white font-bold uppercase mb-4"
+                style={{
+                  fontFamily: "'Oswald',  sans-serif",
+                  fontSize: "clamp(40px, 7vw, 72px)",
+                  lineHeight: 1.0,
+                  letterSpacing: "-0.01em",
+                  whiteSpace: "pre-line",
+                }}
+              >
+                {t.title}
+              </h1>
 
-    {/* Description */}
-    <p
-      className="text-sm sm:text-base leading-relaxed"
-      style={{ color: "rgba(255,255,255,0.82)", maxWidth: 420 }}
-    >
-      {t.d} <br />
-      {t.k} <br />
-      {t.l}
-    </p>
-  </div>
-</div>
+              {/* Description */}
+              <p
+                className="text-sm sm:text-base leading-relaxed"
+                style={{ color: "rgba(255,255,255,0.82)", maxWidth: 420 }}
+              >
+                {t.d} <br />
+                {t.k} <br />
+                {t.l}
+              </p>
+            </div>
+          </div>
         )}
 
         {/* SEARCH BUTTON */}
-<div className="flex flex-col pt-[20px] items-start pb-6 pl-6 sm:pl-10 md:pl-16 lg:pl-24">
-  <button
-    onClick={() => setOpenCatalog(!openCatalog)}
-    className="bg-red-600 text-white px-6 py-3 rounded-xl hover:bg-red-700 transition"
-  >
-    {t.searchBtn}
-  </button>
-</div>
-        
+        <div className="flex flex-col pt-[20px] items-start pb-6 pl-6 sm:pl-10 md:pl-16 lg:pl-24">
+          <button
+            onClick={() => setOpenCatalog(!openCatalog)}
+            className="bg-red-600 text-white px-6 py-3 rounded-xl hover:bg-red-700 transition"
+          >
+            {t.searchBtn}
+          </button>
+        </div>
 
         {/* CATALOG / SEARCH */}
         {openCatalog && (
           <div className="flex flex-col items-center gap-8">
             <div className="w-full flex justify-center px-4">
-<div className="bg-red-600 p-4 sm:p-6 rounded-xl w-full max-w-[400px]">
-                    <input
+              <div className="bg-red-600 p-4 sm:p-6 rounded-xl w-full max-w-[400px]">
+                <input
                   type="text"
                   placeholder={t.placeholder}
                   value={searchValue}
@@ -415,7 +427,9 @@ function App() {
                           <img
                             src={product.images?.[0]}
                             alt=""
-                            onClick={() => setSelectedImage(product.images?.[0])}
+                            onClick={() =>
+                              setSelectedImage(product.images?.[0])
+                            }
                             className="max-w-full max-h-full object-contain cursor-pointer"
                           />
                         </div>
@@ -434,7 +448,9 @@ function App() {
                       <div className="mt-4">
                         <p>{product.title}</p>
                         <p className="font-bold">{product.code}</p>
-                        <p className="text-gray-600 text-sm">{product.description}</p>
+                        <p className="text-gray-600 text-sm">
+                          {product.description}
+                        </p>
                       </div>
                     </div>
                   ))
@@ -450,39 +466,39 @@ function App() {
       </div>
 
       {/* STATS ROW */}
-     {/* STATS ROW */}
-{!(openAbout || openServices) && (
-  <div className="flex flex-wrap pl-[60px]">
-        <div className="flex items-center gap-4 px-6 py-4 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
-          <img src={taj} alt="" className="w-12 h-12 object-contain" />
-          <div>
-            <p className="text-2xl font-bold text-white">5+</p>
-            <p className="text-white text-sm font-medium">{t.taj}</p>
+      {/* STATS ROW */}
+      {!(openAbout || openServices) && (
+        <div className="flex flex-wrap ">
+          <div className="flex items-center gap-4 px-6 py-4 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+            <img src={taj} alt="" className="w-12 h-12 object-contain" />
+            <div>
+              <p className="text-2xl font-bold text-white">5+</p>
+              <p className="text-white text-sm font-medium">{t.taj}</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 px-6 py-4 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+            <img src={mij} alt="" className="w-12 h-12 object-contain" />
+            <div>
+              <p className="text-2xl font-bold text-white">1000+</p>
+              <p className="text-white text-sm font-medium">{t.mijoz}</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 px-6 py-4 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+            <img src={bren} alt="" className="w-12 h-12 object-contain" />
+            <div>
+              <p className="text-2xl font-bold text-white">10+</p>
+              <p className="text-white text-sm font-medium">{t.bre}</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 px-6 py-4 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+            <img src={tele} alt="" className="w-12 h-12 object-contain" />
+            <div>
+              <p className="text-2xl font-bold text-white">24/7</p>
+              <p className="text-white text-sm font-medium">{t.xiz}</p>
+            </div>
           </div>
         </div>
-        <div className="flex items-center gap-4 px-6 py-4 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
-          <img src={mij} alt="" className="w-12 h-12 object-contain" />
-          <div>
-            <p className="text-2xl font-bold text-white">1000+</p>
-            <p className="text-white text-sm font-medium">{t.mijoz}</p>
-          </div>
-        </div>
-        <div className="flex items-center gap-4 px-6 py-4 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
-          <img src={bren} alt="" className="w-12 h-12 object-contain" />
-          <div>
-            <p className="text-2xl font-bold text-white">10+</p>
-            <p className="text-white text-sm font-medium">{t.bre}</p>
-          </div>
-        </div>
-        <div className="flex items-center gap-4 px-6 py-4 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
-          <img src={tele} alt="" className="w-12 h-12 object-contain" />
-          <div>
-            <p className="text-2xl font-bold text-white">24/7</p>
-            <p className="text-white text-sm font-medium">{t.xiz}</p>
-          </div>
-        </div>
-      </div>
-)}
+      )}
       {/* ABOUT SECTION */}
       {openAbout && (
         <div className="max-w-4xl mx-auto backdrop-blur p-6 rounded-xl shadow-lg text-white mb-10 transition-all">
@@ -592,10 +608,22 @@ function App() {
                   +998 (90) 188-99-59
                 </p>
                 <div className="flex items-center gap-4 pt-[40px] pr-[20px]  p-2 rounded-xl shadow-sm w-max">
-  <img src={humo} alt="humo" className="w-10 h-6 object-contain" />
-  <img src={uz} alt="uzcard" className="w-12 h-8 object-contain" />
-  <img src={visa} alt="visa" className="w-10 h-6 object-contain" />
-</div>
+                  <img
+                    src={humo}
+                    alt="humo"
+                    className="w-10 h-6 object-contain"
+                  />
+                  <img
+                    src={uz}
+                    alt="uzcard"
+                    className="w-12 h-8 object-contain"
+                  />
+                  <img
+                    src={visa}
+                    alt="visa"
+                    className="w-10 h-6 object-contain"
+                  />
+                </div>
               </div>
               <div>
                 <p>{t.contact}</p>
