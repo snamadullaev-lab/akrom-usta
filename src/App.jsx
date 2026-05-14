@@ -639,7 +639,13 @@ function App() {
                   <img src={tg} className="w-5" alt="" />
                   <p>@Atkham74</p>
                 </div>
+                 <a href="https://t.me/manzapchast" className="flex mt-2 items-center gap-2" target="_blank">
+                 
+  <img src={tg} className="w-5"  alt="telegram" />
+  Telegram kanal
+</a> 
               </div>
+             
             </div>
           </footer>
         </div>
