@@ -631,14 +631,29 @@ function App() {
                   <img src={pochta} className="w-5" alt="" />
                   <p>komoluzbek@yahoo.com</p>
                 </div>
-                <div className="flex gap-2 mt-2">
-                  <img src={tg} className="w-5" alt="" />
-                  <p>@komol82</p>
-                </div>
-                <div className="flex gap-2 mt-2">
-                  <img src={tg} className="w-5" alt="" />
-                  <p>@Atkham74</p>
-                </div>
+                <div className="flex gap-2 mt-2 items-center">
+  <img src={tg} className="w-5" alt="" />
+
+  <a
+    href="https://t.me/komol82"
+    target="_blank"
+    className="hover:text-blue-500"
+  >
+    @komol82
+  </a>
+</div>
+
+<div className="flex gap-2 mt-2 items-center">
+  <img src={tg} className="w-5" alt="" />
+
+  <a
+    href="https://t.me/Atkham74"
+    target="_blank"
+    className="hover:text-blue-500"
+  >
+    @Atkham74
+  </a>
+</div>
                  <a href="https://t.me/manzapchast" className="flex mt-2 items-center gap-2" target="_blank">
                  
   <img src={tg} className="w-5"  alt="telegram" />
