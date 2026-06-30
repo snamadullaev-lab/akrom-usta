@@ -503,7 +503,7 @@ function App() {
       {openAbout && (
         <div className="max-w-4xl mx-auto backdrop-blur p-6 rounded-xl shadow-lg text-white mb-10 transition-all">
           <div className="w-[300px] h-[300px] mx-auto">
-            <img src={logoa} alt="" className="w-full h-full object-contain" />
+            <img src={logoa} alt="" className="w-full h-full object-contain brightness-0 invert z-30" />
           </div>
           <p>{t.mchj}</p>
           <p>
@@ -526,7 +526,7 @@ function App() {
       {openServices && (
         <div className="max-w-4xl mx-auto backdrop-blur p-6 rounded-xl shadow-lg text-white mb-10 transition-all">
           <div className="w-[300px] h-[300px] mx-auto">
-            <img src={logoa} alt="" className="w-full h-full object-contain" />
+            <img src={logoa} alt="" className="w-full h-full object-contain brightness-0 invert z-30" />
           </div>
           <div className="flex flex-wrap pb-[30px] gap-1">
             <p className="font-bold">{t.rivTitle}</p>
